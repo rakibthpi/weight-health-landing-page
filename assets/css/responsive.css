@@ -1,18 +1,110 @@
 @media screen and (min-width: 1280px) {
 }
-@media screen and (max-width: 420px) {
-    .container{
-        max-width: 1140px;
-        width: 100%;
-        padding: 0 20px;
-    }
+@media screen and (max-width: 1420px) {
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width: 1199px) {
+  .container {
+    max-width: 992px;
+    padding: 0 20px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .footer-top-single ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-top-single ul li {
+    flex: 0 0 49%;
+    border: 1px solid #00000024 !important;
+    padding: 30px 0;
+  }
+  .footer-top {
+    border-bottom: none;
+    border-top: none;
+  }
+  .hero-image img {
+    max-width: 321px;
+  }
+  .steps-image img {
+    max-width: 364px;
+    width: auto;
+  }
+  .faq-section {
+    grid-template-columns: 2fr 3fr;
+  }
 }
 @media screen and (max-width: 991px) {
+  .research {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .faq-section {
+    gap: 40px;
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-image {
+    text-align: center;
+    margin: auto;
+  }
+  .steps-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .steps-image img {
+    max-width: 436px;
+    margin: auto;
+  }
+  .steps {
+    order: 2;
+  }
+  .slider-section {
+    flex-direction: column-reverse;
+  }
+  .slider-img {
+    flex: 0 0 calc(40% - 20px);
+    width: 100%;
+  }
+  .chart {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 13px;
+  }
+  .footer-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 767px) {
+  .review-single-card {
+    flex: 0 0 100%;
+  }
+  .review-text {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .research-area {
+    padding: 37px 0;
+  }
+  .accordion-header {
+    padding: 15px 0;
+  }
+  .footer-text {
+	margin-bottom: 10px;
+}
 }
 @media screen and (max-width: 575px) {
 }
-

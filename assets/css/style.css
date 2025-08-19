@@ -555,6 +555,9 @@ p {
   display: block;
   text-align: right;
 }
+.chart-right img {
+	width: 100%;
+}
 
 /*  ===============  Chart section End  ===============  */
 
@@ -566,7 +569,8 @@ p {
 }
 
 .faq-section {
-  max-width: 1200px;
+  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
