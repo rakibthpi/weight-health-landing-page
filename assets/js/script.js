@@ -60,7 +60,38 @@ document.querySelectorAll(".image-container").forEach((container) => {
   updateSlider(50);
 
   // Prevent image dragging
-  container.querySelectorAll("img").forEach((img) =>
-    img.addEventListener("dragstart", (e) => e.preventDefault())
-  );
+  container.querySelectorAll("img").forEach((img) => img.addEventListener("dragstart", (e) => e.preventDefault()));
+});
+
+function toggleAccordion(element) {
+  const accordionItem = element.parentElement;
+  const content = accordionItem.querySelector(".accordion-content");
+  const answer = content.querySelector(".accordion-answer");
+  const isActive = accordionItem.classList.contains("active");
+
+  // Close all accordion items
+  document.querySelectorAll(".accordion-item").forEach((item) => {
+    item.classList.remove("active");
+    const itemContent = item.querySelector(".accordion-content");
+    itemContent.classList.remove("active");
+    itemContent.style.maxHeight = "0px";
+  });
+
+  // If the clicked item wasn't active, open it
+  if (!isActive) {
+    accordionItem.classList.add("active");
+    content.classList.add("active");
+
+    // Set max-height to the scroll height for smooth animation
+    setTimeout(() => {
+      content.style.maxHeight = answer.scrollHeight + "px";
+    }, 10);
+  }
+}
+
+// Initialize all accordion items as closed
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".accordion-content").forEach((content) => {
+    content.style.maxHeight = "0px";
+  });
 });

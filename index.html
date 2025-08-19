@@ -133,18 +133,8 @@
           </div>
           <div class="slider-img">
             <div class="image-container">
-              <img
-                src="assets/images/profile/1.webp"
-                alt="Before"
-                class="before-image"
-                id="beforeImage"
-              />
-              <img
-                src="assets/images/profile/2.webp"
-                alt="After"
-                class="after-image"
-                id="afterImage"
-              />
+              <img src="assets/images/profile/1.webp" alt="Before" class="before-image" id="beforeImage" />
+              <img src="assets/images/profile/2.webp" alt="After" class="after-image" id="afterImage" />
 
               <div class="slider-handle" id="sliderHandle">
                 <div class="slider-button" id="sliderButton">
@@ -160,18 +150,8 @@
         <div class="slider-section">
           <div class="slider-img">
             <div class="image-container">
-              <img
-                src="assets/images/profile/3.webp"
-                alt="Before"
-                class="before-image"
-                id="beforeImage"
-              />
-              <img
-                src="assets/images/profile/4.webp"
-                alt="After"
-                class="after-image"
-                id="afterImage"
-              />
+              <img src="assets/images/profile/3.webp" alt="Before" class="before-image" id="beforeImage" />
+              <img src="assets/images/profile/4.webp" alt="After" class="after-image" id="afterImage" />
 
               <div class="slider-handle" id="sliderHandle">
                 <div class="slider-button" id="sliderButton">
@@ -250,7 +230,10 @@
       <div class="container">
         <div class="research">
           <div class="research-left">
-            <h1>Research-Backed Medications Prescribed By Doctors</h1>
+            <h1 class="research-title">
+              Research-Backed Medications
+              <span>Prescribed By Doctors</span>
+            </h1>
             <button class="btn-style">Get Started</button>
           </div>
           <div class="research-right">
@@ -264,11 +247,175 @@
                   <p>VP Pharmacy Operations</p>
                 </div>
               </div>
-              <p>
+              <p class="profile-description">
                 With 17+ years of experience in the pharmaceutical industry, Rebecca discovered her passion for
                 Compounding in Pharmacy School. Since then, she has held leadership roles in both sterile and
                 non-sterile compounding pharmacies.
               </p>
+            </div>
+            <div class="profile-card">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="assets/images/profile/2.png" alt="img" />
+                </div>
+                <div class="profile-text">
+                  <h3>Dr. William Lee, MD</h3>
+                  <p>Chief Medical Officer</p>
+                </div>
+              </div>
+              <p class="profile-description">
+                Dr. Lee believes every dollar spent on prevention yields tenfold savings, asserting, "Eden's is at the
+                forefront of metabolic health. By democratizing access to life-changing treatments, we shift our
+                patients away from traditional symptom management and focus more on optimizing overall metabolic
+                function through evidence-based interventions."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chart-area">
+      <div class="container">
+        <div class="chart">
+          <div class="chart-left">
+            <h1 class="chat-title">GLP-1 Prescription Rates & Obesity Trends</h1>
+            <span>2010-2024*</span>
+          </div>
+          <div class="chart-right">
+            <img src="assets/images/chat.png" alt="img" />
+            <span>Journal of American Medical Association: Changes in Adult Obesity Trends in the US</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="accordion-area">
+      <div class="container">
+        <div class="faq-section">
+          <div class="left-column">
+            <h2 class="section-title">Questions?</h2>
+            <button class="btn-style hero-btn">See if you are eligible</button>
+          </div>
+
+          <div class="right-column">
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="accordion-icon">
+                  <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <span class="accordion-question">What if I need to cancel?</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-answer">
+                  You can cancel your subscription at any time through your account dashboard or by contacting our
+                  customer service team. There are no cancellation fees or penalties.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="accordion-icon">
+                  <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <span class="accordion-question">How does a GLP-1 compare to the other weight loss drugs?</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-answer">
+                  GLP-1 medications work differently than traditional weight loss drugs by mimicking hormones that
+                  regulate blood sugar and appetite. They tend to have fewer side effects and are more effective for
+                  long-term weight management.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="accordion-icon">
+                  <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <span class="accordion-question">What is compounded medication?</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-answer">
+                  Compounded medications are custom-made medications prepared by licensed pharmacists to meet specific
+                  patient needs. They can be customized for dosage, form, or to remove allergens.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="accordion-icon">
+                  <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <span class="accordion-question">What does my plan include?</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-answer">
+                  Your plan includes medical consultation, personalized treatment plan, monthly medication delivery,
+                  ongoing support from healthcare providers, and regular check-ins to monitor your progress.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="accordion-icon">
+                  <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <span class="accordion-question">What are the different GLP-1 options?</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-answer">
+                  There are several GLP-1 options available including semaglutide, liraglutide, and tirzepatide. Each
+                  has different dosing schedules and may work differently for different patients.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="accordion-icon">
+                  <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <span class="accordion-question">Can I use a GLP-1 with pre-existing medical conditions?</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-answer">
+                  This depends on your specific medical conditions. Our healthcare providers will review your medical
+                  history during consultation to determine if GLP-1 is safe and appropriate for you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="accordion-icon">
+                  <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <span class="accordion-question">Is a long-term commitment necessary?</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-answer">
+                  While GLP-1 medications are most effective with consistent use, there's no required long-term
+                  commitment. You can adjust or discontinue treatment as needed in consultation with your healthcare
+                  provider.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -276,22 +423,48 @@
     </section>
 
     <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-top-single">
+            <ul>
+              <li>
+                <img src="assets/images/icon/dollar.png" alt="img" />
+                No hidden fees
+              </li>
+              <li>
+                <img src="assets/images/icon/sirish.png" alt="img" />
+                Same price at every dose
+              </li>
+              <li>
+                <img src="assets/images/icon/user.png" alt="img" />
+                Personalized Plans
+              </li>
+              <li>
+                <img src="assets/images/icon/car.png" alt="img" />
+                Free expedited shipping
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <!-- Header Section with Logo and Contact -->
         <div class="footer-header">
           <div class="footer-logo-section">
-            <div class="footer-logo">eden</div>
+            <div class="footer-logo">
+              <img src="assets/images/icon/eden.png" alt="img" />
+            </div>
             <p class="footer-tagline">Eden helps you receive one-on-one guidance from vetted experts.</p>
           </div>
 
           <div class="footer-contact">
             <a href="tel:3022042707" class="contact-item">
+              <span class="contact-icon"><img src="assets/images/icon/arrow.png" alt="img" /></span>
               (302) 204-2707
-              <span class="contact-icon">📞</span>
             </a>
             <a href="mailto:care@tryeden.com" class="contact-item">
+              <span class="contact-icon"><img src="assets/images/icon/arrow2.png" alt="img" /></span>
               care@tryeden.com
-              <span class="contact-icon">✉️</span>
             </a>
           </div>
         </div>
@@ -345,59 +518,48 @@
         <!-- Footer Content -->
         <div class="footer-content">
           <p class="footer-text">
-            At Eden, we believe in empowering individuals on their weight loss journeys through personalized approach
-            care. Our commitment to transparent pricing reflects Eden Sports Price of Every Price philosophy. This
-            unwavering dedication to honesty and trust forms the foundation of our
-            <a href="#">treatment approach</a>
-            . While our pricing structure has been simplicity, we recognize that this may exclude some lower-income
-            individuals. Therefore, Eden treatment and care endeavors. Recent experience has shown that these concerns
-            are fundamentally addressed through our dedication to affordable, quality of care.
+            At Eden, we believe in empowering individuals on their weight loss journey through personalized metabolic
+            care. Our commitment to transparent pricing is reflected in our 'Same Price at Every Dose' philosophy. This
+            ensures predictability in your costs – you'll pay the same price for your medication regardless of dosage
+            adjustments throughout your program. Please note that this may exclude any new member discounts or specific
+            plans. Terms& conditions apply.
           </p>
 
           <p class="footer-text">
-            Eden believes that our patients are
-            <a href="#">consultation with an independent licensed medical professional</a>
-            who will determine if a prescription is appropriate. See important
+            Prescription products require an online evaluation with an independent licensed medical professional who
+            will determine if a prescription is appropriate. See important
             <a href="#">safety information</a>
-            . Benefits shown on Eden are based on real patient data and clinical research studies offered from the
-            research, academic studies, and related third and analysis information that includes appropriate
-            medical/clinical research.
+            . Benefits outlined on TryEden are based on 3rd party studies. Medications are prescribed by independent
+            licensed physicians as part of our weight loss programs. Actual product packaging may appear differently
+            than shown. Physicians may prescribe compounded medications as needed to meet patient requirements or drug
+            shortages. The FDA does not review or approve any compounded medications for safety or effectiveness.
           </p>
 
           <p class="footer-text">
-            Results can vary dramatically from
-            <a href="#">case methodology and past market treatments with clinical data</a>
-            provided by the
-            <a href="#">recommended price</a>
-            . If received patients, clinical trial insurance plan and the recommended patients need when they will be
-            received. All other market, including provided consultation and the cost market not of direct consideration
-            planning. When our customer program
-            <a href="#">strategies</a>
-            . We take care of delivering personalized care by not focusing treatment for continuing information
-            provided. All work is provided by continuing care and independent considerations.
+            Should you seek a prescription item, Eden will facilitate arranging a consultation with a qualified
+            independent provider. The Provider will assess your suitability for the prescription item. If deemed
+            suitable, a doctor may issue a prescription for the item, which can be filled at a partner pharmacy, unless
+            you specify an alternative preference.
           </p>
 
           <p class="footer-text">
-            Eden this current Eden may price information the third-party advertising purposes, including our
-            advertisements shared advertising platforms, providing, dosage and other similar data. Our
-            advertising/promotional and the system information. All provider with provided system care our in our
-            third-party platform advertisements information. Our
-            <a href="#">treatment policy</a>
-            . We are not out of sharing personalized data we may be focusing advertisements. The information provided is
-            protected by our standing on advice of
+            You also consent to Eden using your information for third-party advertising purposes, including but not
+            limited to targeted advertising on platforms such as Facebook, Google, and other similar sites. This
+            includes using hashed and de- identified data to create custom audiences for targeted advertising and to
+            exclude existing customers from certain marketing campaigns. You can opt-out of receiving marketing emails
+            at any time by following the unsubscribe instructions provided in each email or by contacting us directly at
             <a href="#">care@tryeden.com</a>
-            .
           </p>
 
           <p class="footer-text">
-            Policy this about treatments information advertising by the Food and Drug Administration. *Treatment is not
+            Note: The above statements have not been evaluated by the Food and Drug Administration. This product is not
             intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
-          <div class="copyright">© 2024 Eden Health International, Inc. All rights reserved.</div>
+          <div class="copyright">&copy; 2024 Eden Health International, Inc. All rights reserved</div>
 
           <div class="footer-links">
             <a href="#">Privacy Policy</a>

@@ -299,7 +299,7 @@ p {
 .image-container {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -449,17 +449,17 @@ p {
   padding: 20px;
   height: 100%;
 }
-.review-name{
+.review-name {
   color: #121517;
   font-size: 20px;
   font-weight: 400;
 }
-.review-img{
+.review-img {
   display: block;
   max-width: 96px;
   padding-top: 5px;
 }
-.review-text{
+.review-text {
   display: block;
   padding-top: 15px;
   color: #121517;
@@ -469,15 +469,224 @@ p {
 
 /*  =============    Review section End    =============== */
 
+/*  =============== Research section start  ===============  */
 .research-area {
-    background: #F9F9F9;
+  background: #f9f9f9;
+  padding: 90px 0;
+}
+.research {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.research-left {
+  flex: 0 0 calc(55% - 20px);
+}
+.research-right {
+  flex: 0 0 calc(45% - 20px);
+}
+.research-title {
+  color: #121517;
+  font-size: 44px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  max-width: 435px;
+}
+.research-title span {
+  color: #12151754;
+}
+.profile-card {
+  border: 1px solid #0000002e;
+  padding: 33px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.profile-img img {
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+}
+.profile-text h3 {
+  color: #121517;
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+.profile-text p {
+  color: #121517;
+  font-size: 15px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.profile-description {
+  color: #121517;
+  font-size: 17px;
+  font-weight: 300;
 }
 
+/*  ===============  Research section End  ===============  */
+
+/*  ===============  Chart section start  ===============  */
+.chart-area {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  border-top: 40px solid #ffffff;
+}
+.chart {
+  display: flex;
+}
+.chat-title {
+  font-size: 32px;
+  color: #121517;
+  font-weight: 400;
+}
+.chart-left span {
+  color: #1215176b;
+}
+
+.chart-right span {
+  color: #12151773;
+  font-size: 12px;
+  display: block;
+  text-align: right;
+}
+
+/*  ===============  Chart section End  ===============  */
+
+/*  ===============  Accordion section start  ===============  */
+
+.accordion-area {
+  padding: 50px 0;
+  background-color: #eff7f0;
+}
+
+.faq-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.left-column {
+  padding-top: 20px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #1f2937;
+  margin-bottom: 32px;
+  letter-spacing: -1px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  gap: 26px;
+}
+
+.accordion-question {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.4;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.accordion-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: #6b7280;
+  stroke-width: 2;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  opacity: 0;
+}
+
+.accordion-content.active {
+  max-height: 200px;
+  opacity: 1;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.accordion-answer {
+  padding: 0 0 24px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+/*  ===============  Accordion section End  ===============  */
+
 /*  =============  Footer area start  ============= */
+.footer-top {
+  border-bottom: 1px solid #00000024;
+  border-top: 1px solid #00000024;
+  margin-bottom: 30px;
+}
+.footer-top-single ul {
+  display: flex;
+}
+.footer-top-single ul li {
+  flex: 0 0 25%;
+  text-align: center;
+  display: flex;
+  gap: 7px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #121517;
+  padding: 56px 0;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #00000024;
+}
+.footer-top-single ul li:last-child {
+  border-right: none;
+}
 
 .footer {
-  background: #f8f9fa;
-  padding: 60px 0 40px;
+  background: #ffffff;
+  /* padding: 60px 0 40px; */
+  padding-bottom: 40px;
   color: #6c757d;
   font-size: 14px;
   line-height: 1.6;
@@ -495,15 +704,13 @@ p {
 }
 
 .footer-logo {
-  font-size: 32px;
-  font-weight: 300;
-  color: #333;
-  margin-bottom: 15px;
-  letter-spacing: -1px;
+  padding-bottom: 24px;
 }
-
+.footer-logo img {
+  max-width: 125px;
+}
 .footer-tagline {
-  color: #6c757d;
+  color: #121517d4;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -514,47 +721,29 @@ p {
 
 .contact-item {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 8px;
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
+  gap: 7px;
+  color: #121517;
 }
-
-.contact-item:hover {
-  color: #007bff;
+.contact-icon img {
+  width: 25px;
 }
-
-.contact-icon {
-  width: 20px;
-  height: 20px;
-  background: #28a745;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  font-size: 12px;
-  color: white;
-}
-
 .social-links {
   display: flex;
   gap: 15px;
   margin-bottom: 50px;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 10px;
 }
-
 .social-link {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: #fff;
-  border: 1px solid #dee2e6;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #6c757d;
+  color: #121517;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -562,7 +751,7 @@ p {
 .social-link:hover {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #333;
+  color: #333333aa;
 }
 
 .footer-content {
@@ -570,15 +759,14 @@ p {
 }
 
 .footer-text {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #6c757d;
+  font-size: 13px;
+  color: #1215176e;
   margin-bottom: 20px;
   text-align: justify;
 }
 
 .footer-text a {
-  color: #007bff;
+  color: #015546;
   text-decoration: none;
 }
 
@@ -603,12 +791,13 @@ p {
 
 .footer-links a {
   color: #6c757d;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 12px;
 }
 
 .footer-links a:hover {
   color: #333;
+  text-decoration: none;
 }
 
 /* Mock product image styles */
