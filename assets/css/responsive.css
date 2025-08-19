@@ -103,7 +103,19 @@
     padding: 15px 0;
   }
   .footer-text {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .slider-section {
+    padding: 20px;
+  }
+  .hero-title h1 {
+    font-size: 35px;
+  }
+  .hero-text p {
+    font-size: 18px;
+  }
+  .btn-area {
+	flex-wrap: wrap;
 }
 }
 @media screen and (max-width: 575px) {
