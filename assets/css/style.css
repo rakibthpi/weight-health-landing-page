@@ -558,6 +558,13 @@ p {
 .chart-right img {
 	width: 100%;
 }
+.review-btn{
+  margin:0 auto;
+  text-align: center;
+}
+.review-btn a {
+  display: inline-block !important;
+}
 
 /*  ===============  Chart section End  ===============  */
 
