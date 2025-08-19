@@ -61,7 +61,7 @@
     gap: 40px;
   }
   .steps-image img {
-    max-width: 436px;
+    max-width: 100%;
     margin: auto;
   }
   .steps {
@@ -173,6 +173,15 @@
     flex-direction: column;
     gap: 22px;
   }
+  .quote {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #121517ad;
+    margin-bottom: 30px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 30px;
+}
 }
 @media screen and (max-width: 575px) {
   .footer-header {
