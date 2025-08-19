@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeightRx - Semaglutide Delivery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            padding: 15px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #e8f5f3 100%);
+            padding: 60px 0 80px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #2d4a3e;
+        }
+
+        .hero-text .subtitle {
+            font-size: 24px;
+            color: #16a085;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .pricing-badges {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge.lowest-price {
+            background: #16a085;
+            color: white;
+        }
+
+        .badge.klarna {
+            background: #ffb3d9;
+            color: #333;
+        }
+
+        .badge.afterpay {
+            background: #b3e5fc;
+            color: #333;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: #16a085;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .cta-button {
+            background: #16a085;
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #138f7a;
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.1));
+        }
+
+        /* How it works section */
+        .how-it-works {
+            background: #f0fdf9;
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2d4a3e;
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        .steps-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .step-icon {
+            width: 50px;
+            height: 50px;
+            background: #16a085;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d4a3e;
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .bottom-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .bottom-cta-button {
+            background: #2d4a3e;
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bottom-cta-button:hover {
+            background: #1f3329;
+            transform: translateY(-2px);
+        }
+
+        .steps-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .woman-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content,
+            .steps-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .hero-text .subtitle {
+                font-size: 20px;
+            }
+
+            .pricing-badges {
+                justify-content: center;
+            }
+
+            .section-title {
+                text-align: center;
+                font-size: 28px;
+            }
+        }
+
+        /* Mock product image styles */
+        .mock-product {
+            width: 300px;
+            height: 400px;
+            background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .vial {
+            width: 60px;
+            height: 120px;
+            background: linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
+            border-radius: 30px;
+            border: 2px solid #dee2e6;
+            margin: 10px;
+            position: relative;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .vial::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: #dee2e6;
+            border-radius: 50%;
+        }
+
+        .vial::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            height: 60px;
+            background: linear-gradient(180deg, rgba(22,160,133,0.3) 0%, rgba(22,160,133,0.1) 100%);
+            border-radius: 0 0 20px 20px;
+        }
+
+        .vials-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .brand-label {
+            position: absolute;
+            bottom: 30px;
+            background: white;
+            padding: 8px 20px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Mock woman image */
+        .mock-woman {
+            width: 400px;
+            height: 500px;
+            background: linear-gradient(135deg, #2d4a3e 0%, #16a085 100%);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .woman-silhouette {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+            height: 400px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 125px 125px 0 0;
+        }
+
+        .plants-decoration {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 100px;
+            background: radial-gradient(circle, #4ade80 0%, #22c55e 100%);
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .plants-decoration::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -20px;
+            width: 60px;
+            height: 80px;
+            background: radial-gradient(circle, #4ade80 0%, #22c55e 100%);
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">WeightRx</div>
+                <a href="#" class="nav-link">Get Started Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="pricing-badges">
+                        <span class="badge lowest-price">Lowest Price Online</span>
+                        <span class="badge klarna">Klarna</span>
+                        <span class="badge afterpay">afterpay</span>
+                    </div>
+                    
+                    <h1>A full year of Semaglutide delivered</h1>
+                    <div class="subtitle">For Only $49/month</div>
+                    
+                    <p>Get your medication at pharmacy price, not retail prices. WeightRx has a 95% cost reduction compared to typical GLP-1 costs.</p>
+                    
+                    <ul class="features-list">
+                        <li>$49 for a full year of medication</li>
+                        <li>Annual supply delivered to prescribed from physicians</li>
+                        <li>Pay for higher doses only if you need them ($5 more)</li>
+                        <li>Over 3,000 5-STAR online reviews</li>
+                        <li>Free initial ZOOM visit and online provider consultations</li>
+                    </ul>
+                    
+                    <button class="cta-button">Get Started Now ($1 for your first month)</button>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="mock-product">
+                        <div class="vials-container">
+                            <div class="vial"></div>
+                            <div class="vial"></div>
+                            <div class="vial"></div>
+                            <div class="vial"></div>
+                        </div>
+                        <div class="brand-label">WeightRx</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How it works</h2>
+            
+            <div class="steps-content">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">🩺</div>
+                        <div class="step-content">
+                            <h3>Speak With Our Patient Care Team</h3>
+                            <p>Speak with one of our board-certified target of care specialists, complete intake, and get started within 24 hours.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-icon">📋</div>
+                        <div class="step-content">
+                            <h3>Complete Your Medical Intake & Medical Visit</h3>
+                            <p>Complete intake, schedule visit with our licensed, board-certified providers, and then get your prescription.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-icon">🚚</div>
+                        <div class="step-content">
+                            <h3>Medication at Your Door in 24 Hours</h3>
+                            <p>Receive your medication next-day delivery from our partner pharmacy and get your medicine.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="steps-image">
+                    <div class="mock-woman">
+                        <div class="plants-decoration"></div>
+                        <div class="woman-silhouette"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bottom-cta">
+                <button class="bottom-cta-button">Book My $1 first Visit</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
